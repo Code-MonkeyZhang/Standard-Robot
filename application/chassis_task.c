@@ -491,7 +491,7 @@ static void chassis_set_contorl(chassis_move_t *chassis_move_control)
     // 计算旋转PID角速度
 
     chassis_move_control->wz_set = 4.0f;
-
+    //chassis_move_control->wz_set = (float)(rand() % 9) / 1.0f; random ratation speed
     // speed limit
     // 速度限幅
     chassis_move_control->vx_set = fp32_constrain(chassis_move_control->vx_set, chassis_move_control->vx_min_speed, chassis_move_control->vx_max_speed);
